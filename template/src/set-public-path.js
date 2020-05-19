@@ -1,3 +1,3 @@
 import { setPublicPath } from 'systemjs-webpack-interop';
 
-setPublicPath('<%=appName%>');
+<% if(isTs) {%>(<any>window)<% } else {%>window<%} %>.__STL_S_SPA__&&setPublicPath('<%=appName%>');
