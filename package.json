@@ -4,7 +4,7 @@
   "description": "专用于 STLMFE 的 vue-cli 插件 基于single-spa应用",
   "main": "index.js",
   "scripts": {},
-  "author": "EveChee",
+  "author": "evechee",
   "license": "MIT",
   "repository": "https://github.com/EveChee/vue-cli-plugin-stlmfe",
   "bugs": "https://github.com/EveChee/vue-cli-plugin-stlmfe/issues"
