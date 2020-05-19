@@ -9,8 +9,7 @@ Vue.config.productionTip = false;
 
 
 const options = {
-  <% if (usesRouter) { %>
-    router,<% } %>
+  <% if (usesRouter) { %>router,<% } %>
   render: (h <% if(isTs) {%>: Function<% } %>) => h(App),
 }
 
@@ -25,7 +24,7 @@ export const vueLifeCycles = ({ el } <% if(isTs) {%>: any<% } %>) => {
     appOptions: { ...options, el },
   })
 }
-if (!<% if(isTs) {%> (<any>window) <% } else {%> window <%} %>.__STL_S_SPA__) {
+if (!<% if(isTs) {%>(<any>window)<% } else {%> window <%} %>.__STL_S_SPA__) {
   render()
 }
 
