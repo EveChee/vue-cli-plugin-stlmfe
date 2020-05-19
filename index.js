@@ -9,6 +9,12 @@ module.exports = (api, options) => {
       })
       .set('disableHostCheck', true)
 
+    webpackConfig
+      .entry('app')
+      .add('./src/main.ts')
+      .end()
+      .output.filename('[name].js')
+
     webpackConfig.optimization.delete('splitChunks')
 
     webpackConfig.output.libraryTarget('umd')
