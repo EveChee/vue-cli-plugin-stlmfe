@@ -1,6 +1,6 @@
-import './set-public-path';
+import singleSpaVue, {setPath} from 'single-spa-vue-mfe'
+setPath('<%=appName%>')
 import Vue from 'vue';
-import singleSpaVue from './single-spa-vue-mfe'
 
 import App from './App.vue';<% if (usesRouter) { %>
 import router from './router';<% } %>
