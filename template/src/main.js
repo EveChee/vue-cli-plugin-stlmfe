@@ -24,7 +24,7 @@ export const vueLifeCycles = ({ el } <% if(isTs) {%>: any<% } %>) => {
     appOptions: { ...options, el },
   })
 }
-if (!<% if(isTs) {%>(<any>window)<% } else {%>window<%} %>.__STL_S_SPA__) {
+if (!<% if(isTs) {%>(<any>window)<% } else {%>window<%} %>.__SINGLE_SPA_MFE__) {
   render()
 }
 
