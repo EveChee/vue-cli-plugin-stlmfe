@@ -15,7 +15,7 @@ module.exports = api => {
 
   api.extendPackage({
     dependencies: {
-      'single-spa-vue-mfe': '^1.0.0',
+      'single-spa-vue-mfe': '^1.0.1',
       'postcss-plugin-namespace': '^0.0.2',
       'systemjs-webpack-interop': '^0.0.2',
     }
