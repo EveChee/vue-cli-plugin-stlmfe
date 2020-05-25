@@ -5,6 +5,7 @@ module.exports = api => {
 
   api.render({
     [api.entryFile]: './template/src/main.js',
+    './postcss.config.js': './template/postcss.config.js',
   }, {
     isTs,
     usesRouter,
@@ -13,7 +14,8 @@ module.exports = api => {
 
   api.extendPackage({
     dependencies: {
-      'single-spa-vue-mfe': '^1.0.0'
+      'single-spa-vue-mfe': '^1.0.0',
+      'postcss-plugin-namespace': '^0.0.2',
     }
   })
 }
