@@ -8,7 +8,9 @@ module.exports = (api, options) => {
       .devServer
       .headers({
         'Access-Control-Allow-Origin': '*',
-      })
+        'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+        'Access-Control-Allow-Headers':'X-Requested-With, content-type, Authorization, token, nonce, accessKey, operateName, operateUid, sign',
+    })
       .set('disableHostCheck', true)
 
     webpackConfig
